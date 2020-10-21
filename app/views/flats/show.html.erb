@@ -1,0 +1,59 @@
+<div class="banner">
+
+</div>
+
+<div class="container">
+
+  <div class="flat-details">
+
+    <div class="flat-box">
+      <h2><%= @flat.name %></h2>
+      <p><%= @flat.address %></p>
+    </div>
+
+    <div class="flat-box">
+      <h4>A bit more about this flat..</h4>
+      <p> <%= @flat.description %> </p>
+    </div>
+
+    <div class="flat-box">
+      <h4>Details</h4>
+      <p> <i class="fas fa-users"></i> <%= @flat.number_of_guests %> <i class="fas fa-euro-sign"></i> <%= @flat.price_per_night %> </p>
+    </div>
+
+  </div>
+
+  <div class="flat-book">
+
+    <div class="flat-box">
+      <h2>Book this place!</h2>
+
+      <div class="col-auto">
+        <label class=“sr-only” for="inlineFormInputGroup"></label>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">From:</div>
+          </div>
+          <input type="date" class="form-control" id="inlineFormInputGroup" placeholder="12/10/2017">
+        </div>
+
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">To:</div>
+          </div>
+          <input type="date" class="form-control" id="inlineFormInputGroup" placeholder="12/10/2017">
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-success">Book now</button>
+
+    </div>
+
+    <div class="flat-box">
+      <h5>Share</h5>
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-twitter-square"></i>
+
+    </div>
+  </div>
+</div>

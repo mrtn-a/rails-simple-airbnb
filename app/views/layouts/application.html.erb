@@ -10,6 +10,15 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <nav class="navbar navbar-light bg-light">
+      <h4><%= link_to "Joke page AirBnb", flats_path %></h4>
+      <button type="button" class="btn btn-info"><%= link_to "Add a flat", new_flat_path %></button>
+    </nav>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
