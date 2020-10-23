@@ -1,21 +1,28 @@
-<h1>Our lovely flats (<%= @flats.count %>)</h1>
-
-<div class="card-grid">
-  <% @flats.each do |flat| %>
-    <div class="card" style="width: 18rem;">
-      <div class="card-content">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title"><%= flat.name %></h5>
-          <p class="card-text"> <%= flat.address %> </p>
-          <p class="card-text"> <i class="fas fa-users"></i> <%= flat.number_of_guests %> <i class="fas fa-euro-sign"></i> <%= flat.price_per_night %> </p>
-        </div>
-      </div>
-    <div class="card-footer bg-white">
-      <%= link_to 'More info', flat_path(flat), class:"btn btn-link"%>
+<div class="mx-3">
+  <div class="row">
+    <div class="col-12">
+      <h1>Our lovely flats (<%= @flats.count %>)</h1>
     </div>
+  </div>
+
+
+  <div class="card-grid">
+    <% @flats.each do |flat| %>
+      <div class="card" style="width: 18rem;">
+        <div class="card-content">
+          <img class="card-img-top" src='<%= flat.picture_url %>' alt="Card image cap">
+
+          <div class="card-body">
+            <h5 class="card-title"><%= flat.name %></h5>
+            <p class="card-text"> <%= flat.address %> </p>
+            <p class="card-text-bottom"> <i class="fas fa-users"></i> <%= flat.number_of_guests %> <i class="fas fa-euro-sign"></i> <%= flat.price_per_night %> </p>
+          </div>
+        </div>
+        <div class="card-footer bg-white">
+          <%= link_to 'More info', flat_path(flat), class:"btn btn-link"%>
+        </div>
 
       </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
-

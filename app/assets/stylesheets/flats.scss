@@ -1,3 +1,68 @@
 // Place all the styles related to the Flats controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F8F9FA;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.margin-top-negative {
+  margin-top: -60px;
+}
+
+h1 {
+  margin: 20px 0 20px 0;
+}
+
+.banner {
+  height: 360px;
+  background-position: center;
+  background-size: cover;
+}
+
+.flat-box {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.map {
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  padding: 18px;
+}
+
+p.card-text-bottom {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+p.card-text {
+flex: 1 0 30%;
+}

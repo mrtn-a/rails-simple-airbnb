@@ -12,13 +12,11 @@
   <body>
 
     <nav class="navbar navbar-light bg-light">
-      <h4><%= link_to "Joke page AirBnb", flats_path %></h4>
-      <button type="button" class="btn btn-info"><%= link_to "Add a flat", new_flat_path %></button>
+      <h4><%= link_to "Simple AirBnb", flats_path %></h4>
+      <button type="button" class="btn btn-outline-primary"><%= link_to "Add a flat", new_flat_path %></button>
     </nav>
 
-    <div class="container">
-      <%= yield %>
-    </div>
+    <%= yield %>
 
   </body>
 </html>

@@ -1,9 +1,7 @@
-<div class="banner">
-
+<div class="banner" style="background-image: url(' <%= @flat.picture_url %>');">
 </div>
 
-<div class="container">
-
+<div class="container margin-top-negative">
   <div class="flat-details">
 
     <div class="flat-box">
@@ -14,6 +12,9 @@
     <div class="flat-box">
       <h4>A bit more about this flat..</h4>
       <p> <%= @flat.description %> </p>
+      <div class="map" style="background-image: url('https://images.squarespace-cdn.com/content/v1/524883b7e4b03fcb7c64e24c/1443035740954-0KYX5313WPOAVCH44RIQ/ke17ZwdGBToddI8pDm48kKhztsF-0Z40vB295VWXIkwUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2duxdlE-YIor3Gsw6mueOp4Ecthq2xyBEFG5UZv2GVS1aCjLISwBs8eEdxAxTptZAUg/image-asset.png')">
+      </div>
+
     </div>
 
     <div class="flat-box">
@@ -26,9 +27,9 @@
   <div class="flat-book">
 
     <div class="flat-box">
-      <h2>Book this place!</h2>
+      <h2>Book it!</h2>
 
-      <div class="col-auto">
+      <div class="col-auto p-0">
         <label class=“sr-only” for="inlineFormInputGroup"></label>
         <div class="input-group mb-2">
           <div class="input-group-prepend">
@@ -45,7 +46,7 @@
         </div>
       </div>
 
-      <button type="button" class="btn btn-success">Book now</button>
+      <button type="button" class="btn btn-success" style="width: 100%">Book now</button>
 
     </div>
 
